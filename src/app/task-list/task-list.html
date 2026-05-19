@@ -1,0 +1,15 @@
+<div class="task-list">
+  <div class="tarjeta">
+    <h3>Lista de cursos</h3>
+
+    <div class="curso" *ngFor="let curso of cursos">
+      <h4>{{ curso.nombre }}</h4>
+      <p>{{ curso.docente }}</p>
+      <p [ngClass]="curso.activo ? 'activo' : 'inactivo'">
+        Estado: {{ curso.activo ? 'activo' : 'inactivo' }}
+      </p>
+
+      <button class="boton-secundario" (click)="cambiarEstado(curso)">Cambiar estado</button>
+    </div>
+  </div>
+</div>
