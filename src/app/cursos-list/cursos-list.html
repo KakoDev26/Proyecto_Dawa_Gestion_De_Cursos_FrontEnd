@@ -1,7 +1,12 @@
 <div class="cursos-list">
   <div class="tarjeta">
     <h3>Lista de cursos</h3>
-
+     <button class="boton-secundario" (click)="mostrarBienvenida = !mostrarBienvenida">
+      {{ mostrarBienvenida ? 'Ocultar bienvenida' : 'Mostrar bienvenida' }}
+    </button>
+    <div *ngIf="mostrarBienvenida">
+    <p>¡Bienvenido al sistema de gestión de cursos!</p>
+    </div>
     <div class="curso" *ngFor="let curso of cursos">
       <h4>{{ curso.nombre }}</h4>
       <p>{{ curso.docente }}</p>

@@ -19,7 +19,7 @@ interface Curso {
 export class CursosList {
 
  @Input() cursos: Curso[] = [];
-
+  mostrarBienvenida = true;
   cambiarEstado(curso: Curso) {
     curso.activo = !curso.activo;
   }
