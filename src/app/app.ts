@@ -1,8 +1,8 @@
 import { Component, signal } from '@angular/core';
 import { Header } from './header/header';
-import { TaskList } from './task-list/task-list';
 import { Footer } from './footer/footer';
-import { TaskForm } from './task-form/task-form';
+import { CursosList } from './cursos-list/cursos-list';
+import { CursosForm } from './cursos-form/cursos-form';
 
 interface Curso {
   id: number;
@@ -14,7 +14,7 @@ interface Curso {
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [Header, TaskList, Footer, TaskForm],
+  imports: [Header, CursosList, CursosForm, Footer],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })

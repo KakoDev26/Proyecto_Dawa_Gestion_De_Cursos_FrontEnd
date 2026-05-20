@@ -10,13 +10,13 @@ interface Curso {
 
 
 @Component({
-  selector: 'app-task-list',
+  selector: 'app-cursos-list',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './task-list.html',
-  styleUrl: './task-list.css',
+  templateUrl: './cursos-list.html',
+  styleUrl: './cursos-list.css',
 })
-export class TaskList {
+export class CursosList {
 
  @Input() cursos: Curso[] = [];
 

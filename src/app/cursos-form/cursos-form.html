@@ -1,0 +1,22 @@
+<div class="card p-4 shadow-sm">
+  <h3 class="mb-3">Agregar nuevo curso</h3>
+  <div class="mb-3">
+    <label class="form-label">Nombre</label>
+    <input
+      type="text"
+      class="form-control"
+      [(ngModel)]="nombre"
+      placeholder="Ingrese el nombre del curso"
+    />
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Docente</label>
+    <textarea
+      class="form-control"
+      [(ngModel)]="docente"
+      rows="3"
+      placeholder="Ingrese el docente del curso"
+    ></textarea>
+  </div>
+  <button class="btn btn-primary" (click)="agregarCurso()">Agregar Curso</button>
+</div>

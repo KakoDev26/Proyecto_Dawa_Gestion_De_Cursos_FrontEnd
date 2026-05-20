@@ -2,10 +2,10 @@
   <app-header></app-header>
   <div class="row">
     <div class="col-md-5">
-      <app-task-form (cursoAgregado)="agregarNuevoCurso($event)"></app-task-form>
+      <app-cursos-form (cursoAgregado)="agregarNuevoCurso($event)"></app-cursos-form>
     </div>
     <div class="col-md-7">
-      <app-task-list [cursos]="cursos"></app-task-list>
+      <app-cursos-list [cursos]="cursos"></app-cursos-list>
     </div>
   <app-footer></app-footer>
 </div>
